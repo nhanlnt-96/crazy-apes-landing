@@ -6,7 +6,7 @@ import Footer2 from '../../assets/imgs/aboutFooterBg2.svg';
 
 const AboutComp = () => {
   return (
-    <Container className="about-comp">
+    <Container flud className="about-comp">
       <Container className="about-comp-container">
         <Row className="about-comp-content">
           <div className="about-title">

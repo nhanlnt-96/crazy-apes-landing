@@ -51,6 +51,14 @@
       }
     }
   }
+
+  @include desktop {
+    overflow: hidden;
+  }
+
+  @include wide-desktop {
+    overflow: unset;
+  }
 }
 
 .banner-comp-container .banner-comp-mint {

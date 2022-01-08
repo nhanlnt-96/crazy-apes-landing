@@ -1,0 +1,141 @@
+@import "../../styles/rwd";
+
+.roadmap-comp {
+  min-height: 100vh;
+  padding: 24px 0;
+  background: url("../../assets/imgs/bgAbout.jpeg") no-repeat center;
+  background-size: 100% 100%;
+
+  &-container {
+    position: relative;
+
+    .sub-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      &-container {
+        position: relative;
+        height: 100%;
+
+        .bg-middle {
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 50%;
+
+            &:first-child {
+              opacity: .1;
+            }
+
+            &:last-child {
+              opacity: .3;
+            }
+          }
+        }
+
+        .header {
+          position: absolute;
+          transform: rotate(90deg);
+        }
+
+        .footer {
+          position: absolute;
+          width: 150px;
+          height: 200px;
+          bottom: 0;
+          right: 0;
+          opacity: .1;
+        }
+      }
+    }
+  }
+
+  &-content {
+    padding: 50px 0;
+  }
+}
+
+.roadmap-comp-container .roadmap-comp-content .item {
+  z-index: 1;
+
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+
+    .left-side {
+      .roadmap-progress {
+        background: url("../../assets/gifs/roadmapProgress.gif") no-repeat center;
+        background-size: 100% 100%;
+        width: 120px;
+        height: 120px;
+
+        .progress-detail {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-color: #00c4cc;
+
+          .detail {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .roadmap-arrow {
+        margin-top: 24px;
+
+        img {
+          width: 100px;
+        }
+
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+
+    .right-side {
+      .roadmap-title {
+        color: #ffd93b;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 36px;
+        @include mobile {
+          text-align: center;
+        }
+      }
+
+      .detail {
+        color: #02d2c5;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 35px;
+      }
+
+      @include mobile {
+        margin-top: 12px;
+      }
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+    }
+
+    @include desktop {
+      width: 80%;
+    }
+    @include wide-desktop {
+      width: 60%;
+    }
+  }
+}
