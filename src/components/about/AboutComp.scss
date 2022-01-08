@@ -1,0 +1,59 @@
+@import '../../styles/rwd';
+
+.about-comp {
+  min-height: 40vh;
+  background: url("../../assets/imgs/bgAbout.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.about-comp-container .about-comp-content {
+  margin-top: 24px;
+
+  .about-title .title, .about-content .content {
+    color: #ffd93b;
+  }
+
+  .about-title .title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .about-content {
+    margin-top: 24px;
+
+    .content {
+      font-size: 30px;
+      text-align: justify;
+      line-height: 40px;
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.about-comp-container .about-comp-footer-img {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 24px;
+
+  .bg-footer-left, .bg-footer-right {
+    img {
+      width: 200px;
+      height: 200px;
+      opacity: .1;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    .bg-footer-left {
+      display: none;
+    }
+    .bg-footer-right {
+      justify-content: center !important;
+    }
+  }
+}
