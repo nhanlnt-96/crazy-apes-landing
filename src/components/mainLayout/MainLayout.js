@@ -4,6 +4,7 @@ import BannerComp from "../banner/BannerComp";
 import AboutComp from "../about/AboutComp";
 import RoadmapComp from "../roadmap/RoadmapComp";
 import PreSaleComp from "../preSale/PreSaleComp";
+import SpecialApesComp from "../specialApes/SpecialApesComp";
 
 const MainLayout = () => {
   return (
@@ -19,6 +20,9 @@ const MainLayout = () => {
       </Row>
       <Row>
         <PreSaleComp/>
+      </Row>
+      <Row>
+        <SpecialApesComp/>
       </Row>
     </Container>
   )
