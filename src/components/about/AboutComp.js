@@ -19,7 +19,7 @@ const AboutComp = () => {
               giveaways.</p>
           </div>
         </Row>
-        <Row className="about-comp-footer-img">
+        <Row className="comp-footer-img">
           <div className="bg-footer-left">
             <img src={Footer1} alt="crazy-apes"/>
           </div>

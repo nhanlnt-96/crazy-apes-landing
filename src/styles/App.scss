@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "./rwd";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive !important;
+}
+
+.comp-footer-img {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 24px;
+
+  .bg-footer-left, .bg-footer-right {
+    img {
+      width: 200px;
+      height: 200px;
+      opacity: .1;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    .bg-footer-left {
+      display: none;
+    }
+    .bg-footer-right {
+      justify-content: center !important;
+    }
+  }
 }

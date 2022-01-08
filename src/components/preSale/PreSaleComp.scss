@@ -1,0 +1,71 @@
+@import "../../styles/rwd";
+
+.pre-sale-comp {
+  //min-height: 100vh;
+  background: url("../../assets/imgs/bgBanner.jpeg") no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 50px;
+}
+
+.pre-sale-comp-container {
+  .pre-sale-content .content {
+    color: #01022c;
+    font-size: 47px;
+    text-shadow: 0.04419417em 0.04419417em 0 rgba(0, 196, 204, 40%);
+    line-height: 60px;
+
+    span {
+      color: #ffd93b;
+    }
+
+    @include mobile {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .animate-arrow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100px;
+    margin-top: 36px;
+
+    .item-arrow {
+      position: relative;
+
+      .item {
+        transform: rotate(90deg);
+        width: 100px;
+        position: absolute;
+        right: -50px;
+        opacity: .2;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .pre-sale-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include mobile {
+      margin-top: 24px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .pre-sale-footer {
+    .bg-footer-right img {
+      transform: scaleX(-1);
+    }
+  }
+}

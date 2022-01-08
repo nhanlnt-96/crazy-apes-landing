@@ -33,27 +33,3 @@
     }
   }
 }
-
-.about-comp-container .about-comp-footer-img {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 24px;
-
-  .bg-footer-left, .bg-footer-right {
-    img {
-      width: 200px;
-      height: 200px;
-      opacity: .1;
-    }
-  }
-
-  @include mobile {
-    grid-template-columns: repeat(1, 1fr);
-    .bg-footer-left {
-      display: none;
-    }
-    .bg-footer-right {
-      justify-content: center !important;
-    }
-  }
-}

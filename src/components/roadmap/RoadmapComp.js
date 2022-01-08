@@ -20,7 +20,7 @@ const RoadmapComp = () => {
             <img src={FooterImg} alt="crazy-apes" className="footer"/>
           </div>
         </div>
-        <Row className="roadmap-comp-content">
+        <Row className="roadmap-comp-content comp-bg-blue">
           {
             roadmapData.map((val, index) => (
               <div key={index} className="item d-flex justify-content-center align-items-center">
