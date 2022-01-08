@@ -7,6 +7,7 @@ import PreSaleComp from "../preSale/PreSaleComp";
 import SpecialApesComp from "../specialApes/SpecialApesComp";
 import LegendaryComp from "../legendary/LegendaryComp";
 import TeamComp from "../team/TeamComp";
+import FAQComp from "../faq/FAQComp";
 
 const MainLayout = () => {
   return (
@@ -31,6 +32,9 @@ const MainLayout = () => {
       </Row>
       <Row id="team">
         <TeamComp/>
+      </Row>
+      <Row id="faq">
+        <FAQComp/>
       </Row>
     </Container>
   )
