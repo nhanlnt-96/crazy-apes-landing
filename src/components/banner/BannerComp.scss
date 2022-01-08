@@ -1,0 +1,113 @@
+@import '../../styles/rwd';
+
+.banner-comp {
+  background: url("../../assets/imgs/bgBanner.jpeg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+
+  &-middle-bg {
+    background: url("../../assets/imgs/bannerSubBg1.svg") no-repeat center;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    opacity: .1;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-container {
+    position: relative;
+    height: calc(100% - 98px);
+    @include mobile {
+      height: calc(100% - 54px);
+    }
+    @include tablet {
+      height: calc(100% - 54px);
+    }
+
+    &-bottom-bg {
+      background: url("../../assets/imgs/bannerSubBg2.svg") no-repeat center;
+      background-size: 100% 100%;
+      width: 200px;
+      height: 200px;
+      opacity: .2;
+      transform: scaleX(-1);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @include mobile {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+.banner-comp-container .banner-comp-mint {
+  width: 100%;
+  z-index: 1;
+
+  .banner-img, .banner-mint {
+    @include mobile {
+      width: 100%;
+      .mint-container {
+        padding: 0 !important;
+      }
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop {
+      width: 60%;
+    }
+    @include wide-desktop {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.banner-comp-container .banner-comp-title {
+  width: 100%;
+  margin-top: 24px;
+
+  .title-content {
+    .title {
+      color: #01022c;
+      text-shadow: 0.04419417em 0.04419417em 0 rgba(255, 217, 59, 40%);
+      text-align: center;
+
+      &:nth-child(1) {
+        font-size: 54px;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+
+      &:nth-child(2) {
+        font-size: 80px;
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+    }
+
+    img {
+      margin-top: 12px;
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

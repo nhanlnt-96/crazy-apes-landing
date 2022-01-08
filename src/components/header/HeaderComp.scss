@@ -28,6 +28,7 @@
 .header-comp-menu {
   &-items {
     width: 100%;
+    z-index: 1;
 
     .item {
       font-size: 27px;
@@ -39,7 +40,7 @@
       position: relative;
       width: 100px;
       height: 50px;
-      background: white;
+      background: transparent;
       border-radius: 10px;
       font-weight: lighter;
       letter-spacing: 2px;
@@ -48,6 +49,7 @@
       &:hover {
         box-shadow: 0 5px 35px 0 rgba(0, 0, 0, .1);
         color: #ffd93b;
+        background-color: #ffffff;
       }
 
       &:hover::before, div:hover::after {
@@ -56,7 +58,7 @@
         position: absolute;
         width: 100px;
         height: 50px;
-        background: #FDA8CF;
+        background: #ffd93b;
         border-radius: 10px;
         z-index: -1;
         animation: 1s clockwise infinite;

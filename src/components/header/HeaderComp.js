@@ -3,7 +3,7 @@ import {Container, Nav, Navbar} from "react-bootstrap";
 import './HeaderComp.scss';
 import {headerMenu} from "../../configs/headerMenu";
 
-const HeaderComp = () => {
+const HeaderComp = ({btnConnect}) => {
   return (
     <Navbar collapseOnSelect expand="lg" className="header-comp">
       <Container className="header-comp-container">
@@ -18,7 +18,8 @@ const HeaderComp = () => {
           </Navbar>
           <Nav className="header-comp-button">
             <div className="button-container d-flex justify-content-center align-items-center">
-              <button className="button-item d-flex flex-column justify-content-center align-items-center">
+              <button onClick={btnConnect}
+                      className="button-item d-flex flex-column justify-content-center align-items-center">
                 <span className="button-name">connect</span>
                 <span className="button-name">wallet</span>
               </button>
