@@ -5,6 +5,7 @@ import AboutComp from "../about/AboutComp";
 import RoadmapComp from "../roadmap/RoadmapComp";
 import PreSaleComp from "../preSale/PreSaleComp";
 import SpecialApesComp from "../specialApes/SpecialApesComp";
+import LegendaryComp from "../legendary/LegendaryComp";
 
 const MainLayout = () => {
   return (
@@ -23,6 +24,9 @@ const MainLayout = () => {
       </Row>
       <Row>
         <SpecialApesComp/>
+      </Row>
+      <Row>
+        <LegendaryComp/>
       </Row>
     </Container>
   )

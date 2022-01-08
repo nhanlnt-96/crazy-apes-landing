@@ -1,0 +1,44 @@
+@import "../../styles/rwd";
+
+.legendary-comp {
+  background: url("../../assets/imgs/legendaryBg.png") no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 50px;
+}
+
+.legendary-comp-container {
+  .legendary-comp-content {
+    .content {
+      color: #03989e;
+      font-size: 47px;
+      line-height: 60px;
+      text-align: justify;
+
+      span {
+        color: #ffd93b;
+      }
+
+      @include mobile {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .legendary-comp-img {
+    margin-top: 24px;
+
+    img {
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  .legendary-comp-footer {
+    .bg-footer-left img {
+      transform: scaleX(-1);
+    }
+  }
+}
