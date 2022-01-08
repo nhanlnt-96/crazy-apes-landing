@@ -13,14 +13,14 @@ const TeamComp = () => {
       <Container className="team-comp-container">
         <Row className="team-comp-title  d-flex flex-column justify-content-center align-items-center">
           <div className="title-container d-flex flex-column justify-content-center align-items-center">
-            <h6 className="title">The team</h6>
-            <img src={TitleFooter} alt="crazy-apes"/>
+            <h6 data-aos="fade-up" className="title">The team</h6>
+            <img data-aos="fade-down" src={TitleFooter} alt="crazy-apes"/>
           </div>
         </Row>
         <Row className="team-member">
           {
             teamData.map((val, index) => (
-              <div className="item">
+              <div data-aos="zoom-in" className="item">
                 <div className="avatar">
                   <img src={val.ava} alt={val.name}/>
                 </div>
@@ -34,7 +34,7 @@ const TeamComp = () => {
             ))
           }
         </Row>
-        <Row className="team-comp-footer">
+        <Row data-aos="zoom-in" className="team-comp-footer">
           <img className="bg-footer" src={Footer} alt="crazy-apes"/>
           <div className="social d-flex align-items-end">
             <div className="social-container d-flex flex-column justify-content-center align-items-center">

@@ -23,7 +23,7 @@ const RoadmapComp = () => {
         <Row className="roadmap-comp-content">
           {
             roadmapData.map((val, index) => (
-              <div key={index} className="item d-flex justify-content-center align-items-center">
+              <div data-aos="fade-down" key={index} className="item d-flex justify-content-center align-items-center">
                 <div className="item-container">
                   <div className="left-side d-flex flex-column align-items-center">
                     <div className="roadmap-progress d-flex justify-content-center align-items-center">

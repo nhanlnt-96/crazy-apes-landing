@@ -10,18 +10,18 @@ const LegendaryComp = () => {
       <Container className="legendary-comp-container">
         <Row className="legendary-comp-content">
           <div className="sub-bg"/>
-          <h6 className="content">This is the legendary ape and number that officially won $100,000 in ETH! He will lead
+          <h6 data-aos="fade-up" className="content">This is the legendary ape and number that officially won $100,000 in ETH! He will lead
             all The Crazy Apes to victory! Please check discord raffle group chat for instructions on how to claim your
             prize!</h6>
         </Row>
-        <Row className="legendary-comp-img d-flex justify-content-center align-items-center">
+        <Row data-aos="fade-up" className="legendary-comp-img d-flex justify-content-center align-items-center">
           <img src={MainImg} alt="crazy-apes"/>
         </Row>
         <Row className="comp-footer-img legendary-comp-footer">
-          <div className="bg-footer-left">
+          <div data-aos="fade-up" className="bg-footer-left">
             <img src={ImgFooter} alt="crazy-apes"/>
           </div>
-          <div className="bg-footer-right d-flex justify-content-end align-items-center">
+          <div data-aos="fade-up" className="bg-footer-right d-flex justify-content-end align-items-center">
             <img src={ImgFooter} alt="crazy-apes"/>
           </div>
         </Row>

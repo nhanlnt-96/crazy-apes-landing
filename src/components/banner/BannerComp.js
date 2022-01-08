@@ -130,7 +130,7 @@ const BannerComp = () => {
         <Row className="banner-comp-mint justify-content-center align-items-center">
           {
             blockchain.account ? (
-              <div className="banner-mint">
+              <div data-aos="zoom-in" className="banner-mint">
                 <ResponsiveWrapper flex={1} style={{padding: 24}} test className="mint-container">
                   <s.Container
                     flex={2}
@@ -285,7 +285,7 @@ const BannerComp = () => {
                 </ResponsiveWrapper>
               </div>
             ) : (
-              <div className="banner-img">
+              <div data-aos="zoom-in" className="banner-img">
                 <img src={BannerImg} alt="crazy-apes"/>
               </div>
             )
@@ -293,9 +293,9 @@ const BannerComp = () => {
         </Row>
         <Row className="banner-comp-title justify-content-center align-items-center">
           <div className="title-content d-flex flex-column justify-content-center align-items-center">
-            <h1 className="title">Welcome to</h1>
-            <h1 className="title">the crazy apse club</h1>
-            <img src={TitleFooter} alt="crazy-apes"/>
+            <h1 data-aos="fade-up" className="title">Welcome to</h1>
+            <h1 data-aos="fade-up" className="title">the crazy apse club</h1>
+            <img data-aos="fade-up" src={TitleFooter} alt="crazy-apes"/>
           </div>
         </Row>
         <div className="banner-comp-container-bottom-bg"/>

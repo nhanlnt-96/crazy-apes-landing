@@ -33,7 +33,7 @@ const FaqComp = () => {
           </div>
           {
             faqData.map((val, index) => (
-              <div key={index} className="item d-flex justify-content-center align-items-center">
+              <div data-aos="zoom-in" key={index} className="item d-flex justify-content-center align-items-center">
                 <div className="item-container">
                   <p className="question">{val.question}</p>
                   <p className="answer">{val.answer}</p>
@@ -42,7 +42,7 @@ const FaqComp = () => {
             ))
           }
         </Row>
-        <Row className="faq-comp-social-contact">
+        <Row data-aos="zoom-in" className="faq-comp-social-contact">
           <img src={ImgFooter} alt="crazy-ape-faq" className="img-footer"/>
           <div className="social-container d-flex justify-content-center align-items-end">
             <div className="social-item d-flex flex-column justify-content-center align-items-center">
