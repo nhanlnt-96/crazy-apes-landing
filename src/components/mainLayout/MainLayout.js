@@ -6,6 +6,7 @@ import RoadmapComp from "../roadmap/RoadmapComp";
 import PreSaleComp from "../preSale/PreSaleComp";
 import SpecialApesComp from "../specialApes/SpecialApesComp";
 import LegendaryComp from "../legendary/LegendaryComp";
+import TeamComp from "../team/TeamComp";
 
 const MainLayout = () => {
   return (
@@ -27,6 +28,9 @@ const MainLayout = () => {
       </Row>
       <Row>
         <LegendaryComp/>
+      </Row>
+      <Row id="team">
+        <TeamComp/>
       </Row>
     </Container>
   )
