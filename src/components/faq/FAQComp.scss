@@ -25,6 +25,7 @@
           height: 100%;
 
           img {
+            z-index: 1;
             width: 100%;
             height: calc(100% / 5 - (12px * 4));
             opacity: .2;

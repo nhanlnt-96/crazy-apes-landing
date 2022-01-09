@@ -57,7 +57,7 @@ const FaqComp = () => {
                   @crazyapenft
                 </a>
               </div>
-              <p className="copyright">2022 copyrights reserved by THE CRAZY APES CLUB</p>
+              <p className="copyright">THE CRAZY APES CLUB</p>
             </div>
           </div>
         </Row>
