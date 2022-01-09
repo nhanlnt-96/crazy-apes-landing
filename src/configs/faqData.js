@@ -18,7 +18,7 @@ export const faqData = [
   },
   {
     question: "How much will it cost to mint or buy an Ape?",
-    answer: ["The PRESALE price is 0.059 ETH + Fees. The PUBLIC SALES price is 0.098 + Fees."]
+    answer: ["The PRESALE price is 0.069 ETH + Fees. The PUBLIC SALES price is 0.098 + Fees."]
   },
   {
     question: "How to MINT?",

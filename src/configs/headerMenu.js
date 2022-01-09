@@ -8,14 +8,6 @@ export const headerMenu = [
     path: "#about"
   },
   {
-    label: "Maint",
-    path: "#mint"
-  },
-  {
-    label: "Parity",
-    path: "#parity"
-  },
-  {
     label: "Roadmap",
     path: "#roadmap"
   },
