@@ -9,7 +9,7 @@ import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
-// import {notification} from 'antd';
+import {notification} from 'antd';
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -120,13 +120,13 @@ const BannerComp = () => {
       <HeaderComp btnConnect={onBtnConnectWalletClick}/>
       <Container className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
         <div className="banner-comp-middle-bg"/>
-        {/*{*/}
-        {/*  blockchain.errorMsg && notification.info({*/}
-        {/*    message: `Error`,*/}
-        {/*    description: blockchain.errorMsg,*/}
-        {/*    placement: 'bottomRight',*/}
-        {/*  })*/}
-        {/*}*/}
+        {
+          blockchain.errorMsg && notification.info({
+            message: `Error`,
+            description: blockchain.errorMsg,
+            placement: 'bottomRight',
+          })
+        }
         <Row className="banner-comp-mint justify-content-center align-items-center">
           {
             blockchain.account ? (
