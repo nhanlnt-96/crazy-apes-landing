@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import './LegendaryComp.scss';
-import MainImg from '../../assets/imgs/legendaryImg.png';
+import MainImg from '../../assets/imgs/shadowApes.jpeg';
 import ImgFooter from '../../assets/imgs/legendaryImgFooter.svg';
 
 const LegendaryComp = () => {
