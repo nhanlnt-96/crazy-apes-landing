@@ -16,17 +16,17 @@ export const teamData = [
     ava: Ava2
   },
   {
-    name: "vandrelle",
+    name: "Van S.",
     title: "marketing expert",
     ava: Ava3
   },
   {
-    name: "taz",
+    name: "XJ13",
     title: "art director",
     ava: Ava4
   },
   {
-    name: "tamirkaram",
+    name: "Biggie",
     title: "blockchain expert",
     ava: Ava5
   },
