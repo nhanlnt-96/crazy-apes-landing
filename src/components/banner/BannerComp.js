@@ -294,7 +294,7 @@ const BannerComp = () => {
         <Row className="banner-comp-title justify-content-center align-items-center">
           <div className="title-content d-flex flex-column justify-content-center align-items-center">
             <h1 data-aos="fade-up" className="title">Welcome to</h1>
-            <h1 data-aos="fade-up" className="title">the crazy apse club</h1>
+            <h1 data-aos="fade-up" className="title">the crazy apes club</h1>
             <img data-aos="fade-up" src={TitleFooter} alt="crazy-apes"/>
           </div>
         </Row>
