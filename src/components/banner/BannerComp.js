@@ -10,6 +10,7 @@ import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
 import {notification} from 'antd';
+import {CountDown} from "./components";
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -296,6 +297,9 @@ const BannerComp = () => {
             <h1 data-aos="fade-up" className="title">Welcome to</h1>
             <h1 data-aos="fade-up" className="title">the crazy apes club</h1>
             <img data-aos="fade-up" src={TitleFooter} alt="crazy-apes"/>
+          </div>
+          <div className="banner-comp-countdown d-flex justify-content-center align-items-center">
+            <CountDown/>
           </div>
         </Row>
         <div className="banner-comp-container-bottom-bg"/>

@@ -123,3 +123,43 @@
     }
   }
 }
+
+.banner-comp-countdown {
+  margin-top: 24px !important;
+
+  .countdown-container {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-gap: 10px;
+    width: 300px;
+
+    .days, .countdown-space, .hours, .minutes, .seconds {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .countdown-label {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .countdown-display {
+      color: #ffffff;
+      font-size: 40px;
+      margin-top: 12px;
+    }
+
+    .countdown-space {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 30px;
+      justify-content: flex-end;
+
+      .space {
+        height: 40px;
+      }
+    }
+  }
+}
