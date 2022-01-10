@@ -130,8 +130,8 @@ const BannerComp = () => {
         <Row className="banner-comp-mint justify-content-center align-items-center">
           {
             blockchain.account ? (
-              <div data-aos="zoom-in" className="banner-mint">
-                <ResponsiveWrapper flex={1} style={{padding: 24}} test className="mint-container">
+              <div className="banner-mint">
+                <ResponsiveWrapper data-aos="zoom-in" flex={1} style={{padding: 24}} test className="mint-container">
                   <s.Container
                     flex={2}
                     jc={"center"}
