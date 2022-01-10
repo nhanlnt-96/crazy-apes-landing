@@ -125,13 +125,17 @@
 }
 
 .banner-comp-countdown {
-  margin-top: 24px !important;
+  .countdown-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
 
   .countdown-container {
     display: grid;
     grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-gap: 10px;
-    width: 300px;
+    min-width: 300px;
 
     .days, .countdown-space, .hours, .minutes, .seconds {
       display: flex;
@@ -143,12 +147,18 @@
     .countdown-label {
       color: #ffffff;
       font-size: 20px;
+      @include wide-desktop {
+        font-size: 25px;
+      }
     }
 
     .countdown-display {
       color: #ffffff;
       font-size: 40px;
       margin-top: 12px;
+      @include wide-desktop {
+        font-size: 60px;
+      }
     }
 
     .countdown-space {

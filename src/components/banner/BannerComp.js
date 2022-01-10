@@ -298,7 +298,8 @@ const BannerComp = () => {
             <h1 data-aos="fade-up" className="title">the crazy apes club</h1>
             <img data-aos="fade-up" src={TitleFooter} alt="crazy-apes"/>
           </div>
-          <div className="banner-comp-countdown d-flex justify-content-center align-items-center">
+          <div className="banner-comp-countdown d-flex flex-column justify-content-center align-items-center">
+            <p className="countdown-title">Presale start in</p>
             <CountDown/>
           </div>
         </Row>
