@@ -39,28 +39,28 @@ export const CountDown = () => {
     <div className="countdown-container">
       <div className="days">
         <p className="countdown-label">Days</p>
-        <h6 className="countdown-display">{days === 0 ? "00" : days}</h6>
+        <h6 className="countdown-display">{days <= 0 ? "00" : days < 10 ? `0${days}` : days}</h6>
       </div>
       <div className="countdown-space">
         <p className="space">:</p>
       </div>
       <div className="hours">
         <p className="countdown-label">Hours</p>
-        <h6 className="countdown-display">{hours === 0 ? "00" : hours < 10 ? `0${hours}` : hours}</h6>
+        <h6 className="countdown-display">{hours <= 0 ? "00" : hours < 10 ? `0${hours}` : hours}</h6>
       </div>
       <div className="countdown-space">
         <p className="space">:</p>
       </div>
       <div className="minutes">
         <p className="countdown-label">Minutes</p>
-        <h6 className="countdown-display">{minutes === 0 ? "00" : minutes < 10 ? `0${minutes}` : minutes}</h6>
+        <h6 className="countdown-display">{minutes <= 0 ? "00" : minutes < 10 ? `0${minutes}` : minutes}</h6>
       </div>
       <div className="countdown-space">
         <p className="space">:</p>
       </div>
       <div className="seconds">
         <p className="countdown-label">Second</p>
-        <h6 className="countdown-display">{seconds === 0 ? "00" : seconds < 10 ? `0${seconds}` : seconds}</h6>
+        <h6 className="countdown-display">{seconds <= 0 ? "00" : seconds < 10 ? `0${seconds}` : seconds}</h6>
       </div>
     </div>
   )
