@@ -27,7 +27,7 @@ export const CountDown = () => {
       
       // If the count down is over, write some text
       if (distance < 0) {
-        clearInterval(countdown);
+        // clearInterval(countdown);
         setDays(0)
         setHours(0)
         setMinutes(0)
